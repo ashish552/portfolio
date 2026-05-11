@@ -1,97 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aspiring Python & Flask developer passionate about building web apps, based in Auckland, New Zealand.">
-  <meta name="keywords" content="Ashish Kc, Python, Flask, Web Developer, HTML, CSS, Git, SQL, React">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description"
+    content="Software Engineering graduate passionate about IT support, Python development, and web applications. Based in Auckland, New Zealand.">
+
+  <meta name="keywords"
+    content="Ashish Kc, Python Developer, IT Support, Flask, Software Engineering, HTML, CSS, GitHub, React, Auckland">
+
   <title>Ashish Kc | Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .header {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 200px;
+      border-radius: 50% / 40%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: 15px auto;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #1e293b;
+    }
+
+    .project {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .project ul {
+      padding-left: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .skills span {
+      background: #1e293b;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    #contact p {
+      text-align: center;
+      margin: 12px 0;
+    }
+
+    #contact a {
+      color: #0f766e;
+      text-decoration: none;
+    }
+
+    .footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+  </style>
+
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
+
+      <!-- PROFILE IMAGE -->
+      <img 
+        src="./images/profile.jpeg" 
+        alt="Ashish Kc"
+        class="profile-img"
+      >
+
       <h1>Ashish Kc</h1>
-      <img src="./images/profile.jpeg" alt="Ashish Kc" style="width: 160px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <p>An aspiring Python & Flask developer based in Auckland, New Zealand.</p>
+
+      <p class="subtitle">
+        Software Engineering graduate passionate about IT support,
+        Python development, and building practical web applications.
+      </p>
+
+      <!-- CV DOWNLOAD BUTTON -->
+      <!-- IMPORTANT:
+           Put your actual CV PDF file in the same folder as this HTML file
+           and name it exactly:
+           Ashish_KC_CV.pdf
+      -->
+
+      
+
+      <!-- NAVIGATION -->
       <nav>
         <ul class="nav">
-          <li><a href="#work">Work</a></li>
+        <li>  <a href="./Ashish_KC_CV.pdf" download class="btn">Download CV </a></li>
+          <li><a href="#work">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
+  <!-- PROJECTS -->
   <section id="work" class="section">
     <div class="container">
-      <h2>My Work</h2>
+
+      <h2>Projects</h2>
+
       <div class="project">
-        <h3>Flask Blog App</h3>
-        <p>A blog platform built with Flask, Jinja2, and SQLite featuring CRUD operations.</p>
+        <h3>Explainable AI for Detecting Medication Error Risk</h3>
+
+        <p>
+          Final-year research project focused on using explainable machine learning
+          techniques to identify medication error risks and improve transparency
+          in healthcare decision-making.
+        </p>
+
         <ul>
           <li>Python</li>
-          <li>Flask</li>
-          <li>Jinja2</li>
-          <li>SQLite</li>
+          <li>Machine Learning</li>
+          <li>Explainable AI</li>
+          <li>Data Analysis</li>
         </ul>
       </div>
+
       <div class="project">
-        <h3>REST API Backend</h3>
-        <p>A backend API developed with Flask to serve product data using REST principles.</p>
+        <h3>Car Rental Management System</h3>
+
+        <p>
+          A command-line car rental application developed using Python and SQLite
+          featuring user authentication, booking management, and rental tracking.
+        </p>
+
         <ul>
-          <li>Flask</li>
-          <li>REST API</li>
-          <li>MySQL</li>
-          <li>Postman</li>
+          <li>Python</li>
+          <li>SQLite</li>
+          <li>Database Management</li>
+          <li>CLI Application</li>
         </ul>
       </div>
+
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
+
       <h2>Skills & Tools</h2>
+
       <div class="skills">
         <span>Python</span>
         <span>Flask</span>
         <span>HTML</span>
         <span>CSS</span>
-        <span>Git</span>
-        <span>VS Code</span>
+        <span>JavaScript</span>
+        <span>SQLite</span>
         <span>MySQL</span>
-        <span>Postman</span>
+        <span>Git</span>
+        <span>GitHub</span>
         <span>React</span>
+        <span>REST API</span>
+        <span>VS Code</span>
+        <span>Problem Solving</span>
+        <span>Customer Service</span>
       </div>
+
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
+
       <h2>About Me</h2>
+
       <p>
-        I'm Ashish, currently learning backend development with Python and Flask. I enjoy building small projects that help me practice real-world web development skills. I'm passionate about learning, problem solving, and contributing to impactful applications.
+        I'm Ashish, a Master of Software Engineering graduate with a background
+        in customer service and software development. I enjoy building applications
+        using Python and Flask while continuously improving my technical and
+        problem-solving skills.
       </p>
+
+      <p>
+        Currently seeking opportunities in IT Support, Service Desk,
+        and entry-level software development roles in New Zealand.
+      </p>
+
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+
+      <h2>Work Experience</h2>
+
+      <div class="project">
+        <h3>Food & Beverage Attendant – SkyCity Auckland</h3>
+
+        <p>
+          Deliver exceptional customer service in a fast-paced VIP hospitality
+          environment while handling POS operations, teamwork, and customer support.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Front of House & Barista – The Busy Bee Cafe</h3>
+
+        <p>
+          Managed customer service, beverage preparation, POS transactions,
+          and daily operational responsibilities in a busy café environment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
+
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:kecyasis21@gmail.com">kecyasis21@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ashish-kc-7ba194372/" target="_blank">https://www.linkedin.com/in/ashish-kc-7ba194372/</a></p>
-      <p>GitHub: <a href="https://github.com/ashishkc" target="_blank">https://github.com/ashish552</a></p>
+
+      <p>
+        Email:
+        <a href="mailto:kecyasis21@gmail.com">
+          kecyasis21@gmail.com
+        </a>
+      </p>
+
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/ashish-kc-7ba194372/" target="_blank">
+          linkedin.com/in/ashish-kc-7ba194372
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/ashish552" target="_blank">
+          github.com/ashish552
+        </a>
+      </p>
+
+      <p>
+        Location: Auckland, New Zealand
+      </p>
+
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Ashish Kc. All rights reserved.</p>
+      <p>&copy; 2026 Ashish Kc. All rights reserved.</p>
     </div>
   </footer>
 
 </body>
+
 </html>
