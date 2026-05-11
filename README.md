@@ -30,7 +30,7 @@ Python and SQLite-based command-line application for managing car rentals, booki
 ## Live Website
 
 Portfolio Link:
-https://ashish552.github.io/portfolio
+ https://ashish552.github.io/portfolio/
 
 ## Contact
 
